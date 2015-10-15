@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent"
+		android:scrollbarAlwaysDrawVerticalTrack="true"
+		android:scrollbars="vertical" android:layout_width="fill_parent"
+		android:scrollbarSize="10pt">
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:layout_height="wrap_content"
+		android:text="If you are Clubspend member, Please login so that you may begin using our services."
+		android:id="@+id/title" android:paddingBottom="20px" android:typeface="normal"
+		android:layout_width="wrap_content" android:textColor="#007599"
+		android:textSize="15sp" android:layout_gravity="center" android:gravity="center" android:layout_marginTop="40px"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingLeft="12px"
+		android:id="@+id/lblUserId" android:text="Email:"></TextView>
+	<EditText android:layout_height="wrap_content"
+		android:layout_marginLeft="12px" android:layout_width="fill_parent"
+		android:layout_marginRight="12px" android:id="@+id/txtUserId"></EditText>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingLeft="12px"
+		android:id="@+id/lblPassword" android:text="Password:"></TextView>
+	<EditText android:layout_height="wrap_content"
+		android:layout_marginLeft="12px" android:layout_width="fill_parent"
+		android:layout_marginRight="12px" android:id="@+id/txtPassword"
+		android:password="true"></EditText>
+	<CheckBox android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/chkRemember"
+		android:text="Remember me" android:layout_gravity="center"
+		android:textSize="13dp"></CheckBox>
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/loginBtn"
+		android:text="Login" android:layout_gravity="center" android:drawableLeft="@drawable/login"/>
+	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/copyright"
+		android:textSize="12sp" android:layout_gravity="center"
+		android:layout_marginTop="30px" />
+</LinearLayout>
+</ScrollView>

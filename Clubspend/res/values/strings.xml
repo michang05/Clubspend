@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, WSLogin!</string>
+	<string name="app_name">Clubspend</string>
+	<string name="copyright">© 2009 HipSpend.com All Right Reserved</string>
+	<string name="payment_history_activity_title">Payment History</string>
+	<string name="PostedTab">Posted Payments</string>
+	<string name="PendingTab">Pending Payments</string>
+
+	<string name="Pending_none">No Pending Payments For User Found</string>
+	<string name="Posted_none">No Posted Payments For User Found</string>
+	<string name="Transaction_Details_Title">Payment Transaction Details</string>
+	<string name="Search_Title">Search Payments</string>
+	<string name="paymentHistory_desc">Enjoy our extensive payment history features! From
+		here you can see all of your deposits, incoming commissions, product
+		purchases, money transfers, and more!</string>
+	<string name="sendMoney_Desc">Use this area to send money to anyone! Hipspend
+		members will receive this money immediately. Non-members will receieve
+		an invitation to join, so that they can quickly receive the funds you
+		have transferred to them.</string>
+	<string name="requestMoney_desc">Use this area to withdraw money from your Hipspend
+		account.</string>
+	<string name="MoneyManager_Title">Money Manager Area</string>
+	<string name="about_title">Welcome to the Hipspend Money Manager Area</string>
+	<string name="about_title_desc">The Money Manager area is for adding, remove,
+		transfering, sending, and receiving money in the Hipspend system.
+	</string>
+	<string name="about_actvitiy_label">About Clubspend</string>
+	<string name="send_money_activity_title">Send Money</string>
+	<string name="receive_money_activity_title">Receive Money</string>
+</resources>

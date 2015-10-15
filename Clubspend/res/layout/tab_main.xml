@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout android:id="@+id/layoutTop"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+			<!-- tab Pending Payment -->
+			<LinearLayout android:id="@+id/pendingPayment"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<ListView android:id="@+id/listPendingTransaction"
+					android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingBottom="70px"/>
+				
+			</LinearLayout>
+
+			<!-- tab Posted Payment -->
+			<LinearLayout android:id="@+id/postedPayment"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+
+				<ListView android:id="@+id/listPostedTransaction"
+					android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingBottom="70px"/>
+				
+			</LinearLayout>
+
+		</FrameLayout>
+
+
+	</LinearLayout>
+
+
+	<com.interactiveplus.view.TransparentPanel
+		android:id="@+id/transparent_panel" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingLeft="5px"
+		android:paddingTop="5px" android:paddingRight="5px"
+		android:paddingBottom="5px" android:layout_gravity="bottom">
+
+		 <CheckBox android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/chkHideDec"
+			android:text="Hide Decline Payments" android:textSize="12px"
+			android:textColor="#998" />
+		<TextView android:id="@+id/totalBalance"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:textColor="#ffFFffFF" android:gravity="right" android:text="Total Balance: $" />
+
+	</com.interactiveplus.view.TransparentPanel>
+
+
+
+
+
+
+
+
+</TabHost>

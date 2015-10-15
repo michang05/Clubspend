@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbars="vertical"
+	android:layout_width="fill_parent" android:scrollbarSize="10pt" android:background="#000044">
+
+	<LinearLayout android:id="@+id/linearSearch"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<TextView android:id="@+id/TextView01" android:layout_height="wrap_content"
+			android:text="SEARCH BY:" android:layout_alignWithParentIfMissing="false"
+			android:gravity="center" android:layout_width="fill_parent"
+			android:layout_marginTop="20px" android:textSize="20px"
+			android:textColor="#ffffff" android:textStyle="normal|bold"></TextView>
+
+		<TextView android:id="@+id/TextView01" android:layout_height="wrap_content"
+			android:text="Payment Period:" android:textSize="15px"
+			android:textStyle="bold" android:layout_marginTop="20px"
+			android:layout_width="wrap_content" android:layout_marginLeft="20px" />
+		<LinearLayout android:id="@+id/linearSpinners"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<Spinner android:id="@+id/cmbMonth" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_marginLeft="20px" />
+			<Spinner android:id="@+id/cmbYear" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_marginLeft="20px" />
+		</LinearLayout>		
+		<Button android:layout_height="wrap_content" android:id="@+id/btnDisplayPaymentPeriod"
+			android:text="Display" android:layout_marginLeft="20px"
+			android:layout_width="fill_parent" android:layout_marginRight="20px"></Button>
+		
+		<TextView android:id="@+id/paymentIDLabel"
+			android:layout_height="wrap_content" android:text="Payment ID:"
+			android:textSize="15px" android:textStyle="bold"
+			android:layout_marginTop="20px" android:layout_width="wrap_content"
+			android:layout_marginLeft="20px" />
+		<LinearLayout android:id="@+id/linearByID"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<EditText android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="20px"
+				android:width="100px" android:inputType="numberSigned|numberDecimal"
+				android:id="@+id/txtTransactionId" android:singleLine="true" />
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/btnGo"
+				android:text="GO" android:layout_marginBottom="10px"
+				android:padding="20px"></Button>
+		</LinearLayout>
+
+		<TextView android:id="@+id/lblSimplyAll"
+			android:layout_height="wrap_content" android:text="or simply:"
+			android:textSize="15px" android:textStyle="bold"
+			android:layout_width="wrap_content" android:layout_marginLeft="20px" />
+		<Button android:layout_height="wrap_content" android:id="@+id/btnDisplayAll"
+			android:text="Display All" android:layout_width="fill_parent"
+			android:layout_marginLeft="20px" android:layout_marginRight="20px"></Button>
+
+	</LinearLayout>
+</ScrollView>

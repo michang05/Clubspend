@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent"
+		android:scrollbarAlwaysDrawVerticalTrack="true"
+		android:scrollbars="vertical" android:layout_width="fill_parent"
+		android:scrollbarSize="10pt" android:background="#000044">
+<TableLayout android:layout_height="fill_parent" android:background="#000044" android:layout_width="fill_parent">
+	
+	<TableRow android:gravity="center" android:layout_margin="20px">
+		<TextView android:id="@+id/lblMoneyManager"
+			android:textColor="#ffffff" android:layout_height="wrap_content" android:textStyle="bold" android:text="Welcome to the Hipspend Money Manager Area"
+			android:layout_width="wrap_content" android:textSize="20px" android:layout_gravity="center_vertical|center_horizontal|center" android:layout_weight="1" android:gravity="center_vertical|center_horizontal|center"/>
+	</TableRow>
+	<TableRow>
+
+		
+
+	<LinearLayout android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:id="@+id/linearPaymentHistory" android:layout_gravity="center">
+	<Button android:id="@+id/btnPaymentHistory" android:text="Payment History"
+		android:drawableLeft="@drawable/history_payment" android:layout_gravity="center" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:width="200px"></Button><TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="12px" android:text="Click here for Info" android:layout_gravity="center" android:clickable="true" android:id="@+id/lblPaymenInfo"></TextView></LinearLayout>
+</TableRow>
+	
+	<TableRow>
+	
+	<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/linearSendMoney" android:layout_gravity="center"><Button android:text="Send Money" android:id="@+id/btnSendMoney" android:drawableLeft="@drawable/send_money" android:layout_gravity="center" android:layout_height="wrap_content" android:layout_width="wrap_content" android:width="200px"/><TextView android:layout_height="wrap_content" android:textSize="12px" android:layout_width="wrap_content" android:text="Click here for Info" android:layout_gravity="center" android:clickable="true" android:id="@+id/lblSendMoneyInfo"></TextView></LinearLayout>
+		
+	
+</TableRow>
+	
+	<TableRow>
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/linearReceiveMoney" android:layout_gravity="center"><Button android:id="@+id/btnReceiveMoney" android:text="Receive Money" android:drawableLeft="@drawable/receive_money" android:layout_gravity="center" android:layout_height="wrap_content" android:layout_width="wrap_content" android:width="200px"/><TextView android:layout_height="wrap_content" android:textSize="12px" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center" android:text="Click here for Info" android:clickable="true" android:id="@+id/lblReceiveMoneyInfo"></TextView></LinearLayout>
+	
+</TableRow>
+	
+
+</TableLayout>
+</ScrollView>

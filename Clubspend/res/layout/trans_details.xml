@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbars="vertical"
+	android:layout_width="fill_parent" android:scrollbarSize="10pt"
+	android:background="#000033">
+	<LinearLayout android:id="@+id/widget31"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:layout_x="0px"
+		android:layout_y="0px">
+
+		<TextView android:id="@+id/transDetailsTitle"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="Transaction Details" android:textSize="25sp"
+			android:textStyle="bold" android:gravity="center" android:textColor="#036799"
+			android:layout_marginTop="10px" android:background="#CFF">
+		</TextView>
+
+		<TextView android:id="@+id/transDatePosted"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="Date Posted" android:textSize="15sp" android:textStyle="bold"
+			android:gravity="center" android:textColor="#445161">
+		</TextView>
+		<TextView android:id="@+id/transDateVal"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:textColor="#ffFFffFF" android:gravity="center" android:text="2009/07/09" />
+		<!-- Linear ID -->
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearId" android:layout_width="fill_parent">
+			<TextView android:id="@+id/transId" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="20px"
+				android:text="ID:" android:textSize="18sp" android:textStyle="normal"
+				android:layout_marginTop="15px">
+			</TextView>
+			<TextView android:id="@+id/transIdVal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="20px"
+				android:layout_marginRight="20px" android:text="642"
+				android:gravity="right" android:textStyle="bold" android:textSize="20sp">
+			</TextView>
+		</LinearLayout>
+
+		<!-- Transaction Label -->
+		<TextView android:id="@+id/transLabel" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="20px"
+			android:text="Transaction:" android:textSize="18sp"
+			android:textStyle="normal" android:layout_marginTop="8px">
+		</TextView>
+		<TextView android:id="@+id/transLabelVal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:textSize="15sp"
+			android:textStyle="normal" android:text="USER TRANSFER RECEIVED from herspend@ninedot.biz"
+			android:layout_marginRight="20px" android:textColor="#99FF66" />
+		<!-- Linear Debit -->
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearDebit" android:layout_width="fill_parent">
+			<TextView android:id="@+id/transDebit" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="20px"
+				android:text="Debit:" android:textSize="18sp" android:textStyle="normal"
+				android:layout_marginTop="15px">
+			</TextView>
+			<TextView android:id="@+id/transDebitVal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="20px" android:layout_marginRight="20px"
+				android:text="" android:textSize="18sp" android:gravity="right"
+				android:textStyle="bold">
+			</TextView>
+		</LinearLayout>
+
+		<!-- Credit -->
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearCredit" android:layout_width="fill_parent">
+			<TextView android:id="@+id/transCredit"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="20px" android:text="Credit:"
+				android:textSize="18sp" android:textStyle="normal"
+				android:layout_marginTop="15px">
+			</TextView>
+			<TextView android:id="@+id/transCreditVal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="20px" android:layout_marginRight="20px"
+				android:text="$1.00" android:gravity="right" android:textStyle="bold"
+				android:textSize="20sp">
+			</TextView>
+		</LinearLayout>
+		<!-- Balance -->
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearTotalBalance" android:layout_width="fill_parent">
+			<TextView android:id="@+id/transBal" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="20px"
+				android:text="Balance:" android:textSize="18sp" android:textStyle="normal"
+				android:layout_marginTop="15px">
+			</TextView>
+			<TextView android:id="@+id/transBalVal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="20px" android:layout_marginRight="20px"
+				android:text="$89.03" android:gravity="right" android:textStyle="bold"
+				android:textSize="20sp">
+			</TextView>
+		</LinearLayout>
+		<!-- Status -->
+
+		<TextView android:id="@+id/transStatus" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="20px"
+			android:text="Current Status:" android:textSize="18sp"
+			android:textStyle="normal" android:layout_marginTop="15px">
+		</TextView>
+		<TextView android:id="@+id/transStatusVal"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:textSize="15sp"
+			android:layout_marginRight="20px" android:layout_gravity="right"
+			android:text="APP" android:textColor="#178" android:textStyle="normal|bold" />
+
+	</LinearLayout>
+
+</ScrollView>

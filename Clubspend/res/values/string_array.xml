@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="Month">
+		<item>January</item>
+		<item>February</item>
+		<item>March</item>
+		<item>April</item>
+		<item>May</item>
+		<item>June</item>
+		<item>July</item>
+		<item>August</item>
+		<item>September</item>
+		<item>October</item>
+		<item>November</item>
+		<item>December</item>
+	</string-array>
+	<string-array name="Year">
+		<item>2010</item>
+		<item>2009</item>
+		<item>2008</item>
+		<item>2007</item>
+		<item>2006</item>
+		<item>2005</item>
+		<item>2004</item>
+		<item>2003</item>
+		<item>2002</item>
+		<item>2001</item>
+		<item>2000</item>
+	</string-array>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent"
+		android:scrollbarAlwaysDrawVerticalTrack="true"
+		android:scrollbars="vertical" android:layout_width="fill_parent"
+		android:scrollbarSize="10pt">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="25sp"
+			android:textStyle="bold" android:gravity="center" android:textColor="#036799"
+			android:layout_marginTop="10px" android:id="@+id/lblSendMoney"
+			android:text="Send Money">
+		</TextView>
+
+
+		<!-- Linear Balance -->
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearBalance" android:layout_width="fill_parent">
+			<TextView android:id="@+id/lblBalance" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="20px"
+				android:text="Send from Current Balance:" android:textStyle="normal"
+				android:layout_marginTop="15px" android:textSize="15sp">
+			</TextView>
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="20px"
+				android:text="$89.90" android:gravity="right" android:textStyle="bold"
+				android:textSize="20sp" android:layout_marginRight="20px" android:id="@+id/lblBalanceValue">
+			</TextView>
+		</LinearLayout>
+
+
+		<TextView android:id="@+id/lblEmailAddress"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:text="Send to Email Address:"
+			android:textSize="15sp" android:textStyle="normal"
+			android:layout_marginTop="8px">
+		</TextView>
+
+		<EditText android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/txtEmailAddress"
+			android:singleLine="true" android:inputType="textEmailAddress"
+			android:layout_marginLeft="20px" android:width="250px"
+			android:layout_marginTop="8px"/>
+		<TextView android:id="@+id/lblAmount" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="20px"
+			android:textSize="15sp" android:textStyle="normal"
+			android:layout_marginTop="8px" android:text="Amount (example: 100.00):">
+		</TextView>
+
+		<EditText android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/txtAmount"
+			android:singleLine="true" android:layout_marginLeft="20px"
+			android:width="250px" android:layout_marginTop="8px"
+			android:inputType="numberDecimal"></EditText>
+
+		<TextView android:id="@+id/lblDateReceived"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="20px" android:textSize="15sp"
+			android:textStyle="normal" android:layout_marginTop="8px"
+			android:text="Eligible to receive on date:">
+		</TextView>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearBalance" android:layout_width="fill_parent">
+			<Button android:id="@+id/pickDate" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Set Date"
+				android:layout_marginLeft="20px" />
+			<TextView android:layout_height="wrap_content" android:text="Your Date for sending"
+				android:gravity="right" android:layout_width="fill_parent"
+				android:layout_marginRight="20px" android:layout_marginLeft="20px"
+				android:textSize="15sp" android:textStyle="bold" android:id="@+id/lblDateDisplay"/>
+
+		</LinearLayout>
+
+
+		<TextView android:id="@+id/TextView09" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="20px"
+			android:text="Message (optional):" android:textSize="15sp"
+			android:textStyle="normal" android:layout_marginTop="8px">
+		</TextView>
+		<LinearLayout android:id="@+id/LinearLayout04"
+			 android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+				
+				<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:minHeight="40pt" android:textSize="5pt" android:layout_marginLeft="20px" android:layout_marginRight="20px" android:id="@+id/txtMessage" android:width="110pt">
+				</EditText>
+			</LinearLayout><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnSendMoney" android:text="Send Now" android:layout_gravity="center" android:width="100px" android:textSize="15sp" android:textStyle="bold"></Button>
+<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copyright" android:textSize="12sp" android:layout_gravity="center" android:layout_marginTop="30px" /></LinearLayout>
+</ScrollView>
